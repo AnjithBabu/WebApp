@@ -4,13 +4,10 @@
     <title>JC's Groups: Contact</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-	
-<link rel="stylesheet" type="text/css" media="screen" href="datePicker.css">
-<script type="text/javascript" src="date.js"></script>
-<script type="text/javascript" src="jquery.datePicker.js"></script>
+	<link rel="stylesheet" href="bootstrap.min.css">
   </head>
-
+	 
+  <!--Content begins here -->	 
   <body>
 	<nav class="navbar navbar-inverse navbar-fixed-top navbar-no-bg" role="navigation">
 		<div class="container">
@@ -36,55 +33,63 @@
 		</div>
 	</nav>
 		
-  
     <div class="container">
-	  <br/>
-	  <br/>
-	  <br/>
-	  <br/>
-	   <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#fill-details">
-			Click Here To Fill Details</button>
-			<br/>
-			<br/>
-			<br/><br/>
-			<div id="fill-details" class="panel-collapse collapse">
-				<form data-toggle="validator" role="form">
-					<div class="form-group">
-						<label for="inputName" class="control-label">Frist Name</label>
-						<input type="text" class="form-control" id="inputName" placeholder="Your first name" required>
-					</div>
-					<div class="form-group">
-						<label for="inputName" class="control-label">Last Name</label>
-						<input type="text" class="form-control" id="inputName" placeholder="Your last name" required>
-					</div>
-					<div class="form-group">
-						<label for="inputEmail" class="control-label">Email</label>
-						<input type="email" class="form-control" id="inputEmail" placeholder="Email" data-error="Bruh, that email address is invalid" required>
-						<div class="help-block with-errors"></div>
-					</div>
-					<div class="form-group">
-						<label for="inputPassword" class="control-label">Password</label>
-						
+		<br/><br/><br/><br/>
+		<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#fill-details">Click Here To Fill Details</button>
+		<br/><br/><br/><br/>
+		<div id="fill-details" class="panel-collapse collapse">
+			<form data-toggle="validator" role="form">
+				<div class="form-group">
+					<label for="inputName" class="control-label">Frist Name</label>
+					<input type="text" class="form-control" id="inputName" placeholder="Your first name" required>
+				</div>
+				<div class="form-group">
+					<label for="inputName" class="control-label">Last Name</label>
+					<input type="text" class="form-control" id="inputName" placeholder="Your last name" required>
+				</div>
+				<div class="form-group">
+					<label for="inputEmail" class="control-label">Email</label>
+					<input type="email" class="form-control" id="inputEmail" placeholder="Email" data-error="Email address is invalid" required>
+					<div class="help-block with-errors"></div>
+				</div>
+				
+				<div class="form-group">
+						<label for="inputName" class="control-label">Preferred Date </label>
+						<input type="text" data-date-format="mm/dd/yy" class="datepicker" >
+				</div>
+				
+				<div class="form-group">
+					<label for="inputPassword" class="control-label">Password</label>
+					<div class="form-inline row">
+						<div class="form-group col-sm-6">
 							<input type="password" data-minlength="6" class="form-control" id="inputPassword" placeholder="Password" required>
 							<span class="help-block">Minimum of 6 characters</span>
-						
-					</div>	
-					<div class="form-group">
-						<label for="inputPassword" class="control-label">Confirm Password</label>
-					
+						</div>
+						<div class="form-group col-sm-6">
 							<input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="Whoops, these don't match" placeholder="Confirm" required>
 							<div class="help-block with-errors"></div>
+						</div>
 					</div>
+				</div>
 
-					<div class="form-group">
+				<div class="form-group">
 					<button type="submit" class="btn btn-primary">Submit</button>
-					</div>
-					</div>
-				</form>
-			</div>
+				</div>
+			</form>
+		</div>	
     </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<!-- Contents end here-->
+	<!-- Scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script src="bootstrap-datepicker.js"></script>
+	<script src="validator.js"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+		$('.datepicker').datepicker();
+		})
+	</script>
+	<!-- Ends here -->
   </body>
 </html>
