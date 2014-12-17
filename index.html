@@ -38,50 +38,43 @@
 		
   
     <div class="container">
-	  <br/>
-	  <br/>
-	  <br/>
-	  <br/>
-	   <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#fill-details">
-			Click Here To Fill Details</button>
-			<br/>
-			<br/>
-			<br/><br/>
-			<div id="fill-details" class="panel-collapse collapse">
-				<form data-toggle="validator" role="form">
-					<div class="form-group">
-						<label for="inputName" class="control-label">Frist Name</label>
-						<input type="text" class="form-control" id="inputName" placeholder="Your first name" required>
-					</div>
-					<div class="form-group">
-						<label for="inputName" class="control-label">Last Name</label>
-						<input type="text" class="form-control" id="inputName" placeholder="Your last name" required>
-					</div>
-					<div class="form-group">
-						<label for="inputEmail" class="control-label">Email</label>
-						<input type="email" class="form-control" id="inputEmail" placeholder="Email" data-error="Bruh, that email address is invalid" required>
-						<div class="help-block with-errors"></div>
-					</div>
-					<div class="form-group">
-						<label for="inputPassword" class="control-label">Password</label>
-						
-							<input type="password" data-minlength="6" class="form-control" id="inputPassword" placeholder="Password" required>
-							<span class="help-block">Minimum of 6 characters</span>
-						
-					</div>	
-					<div class="form-group">
-						<label for="inputPassword" class="control-label">Confirm Password</label>
+		<br/><br/><br/><br/>
+		<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#fill-details">Click Here To Fill Details</button>
+		<br/><br/><br/><br/>
+		<div id="fill-details" class="panel-collapse collapse">
+			<form data-toggle="validator" role="form">
+				<div class="form-group">
+					<label for="inputName" class="control-label">Frist Name</label>
+					<input type="text" class="form-control" id="inputName" placeholder="Your first name" required>
+				</div>
+				<div class="form-group">
+					<label for="inputName" class="control-label">Last Name</label>
+					<input type="text" class="form-control" id="inputName" placeholder="Your last name" required>
+				</div>
+				<div class="form-group">
+					<label for="inputEmail" class="control-label">Email</label>
+					<input type="email" class="form-control" id="inputEmail" placeholder="Email" data-error="Bruh, that email address is invalid" required>
+					<div class="help-block with-errors"></div>
+				</div>
+				<div class="form-group">
+					<label for="inputPassword" class="control-label">Password</label>
 					
-							<input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="Whoops, these don't match" placeholder="Confirm" required>
-							<div class="help-block with-errors"></div>
-					</div>
+						<input type="password" data-minlength="6" class="form-control" id="inputPassword" placeholder="Password" required>
+						<span class="help-block">Minimum of 6 characters</span>
+					
+				</div>	
+				<div class="form-group">
+					<label for="inputPassword" class="control-label">Confirm Password</label>
+				
+						<input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="Whoops, these don't match" placeholder="Confirm" required>
+						<div class="help-block with-errors"></div>
+				</div>
 
-					<div class="form-group">
-					<button type="submit" class="btn btn-primary">Submit</button>
-					</div>
-					</div>
-				</form>
-			</div>
+				<div class="form-group">
+				<button type="submit" class="btn btn-primary">Submit</button>
+				</div>
+			</form>
+		</div>	
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
